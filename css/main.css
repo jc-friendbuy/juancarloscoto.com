@@ -1,13 +1,52 @@
 body
 {
+    position: relative;
     font-family: 'Helvetica', 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, #003, #111);
+
 }
 
 section
 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    padding: 10px;
+    width: 90%;
     display: block;
+    color: #004;
+    background: linear-gradient(to bottom, #aef5ff, #d5f4ff);
+    border-radius: 5px;
+    /*border: solid 2px black;*/
+}
+
+article
+{
+    margin-bottom: 20px;
+}
+
+#main-title
+{
+    height: 180px;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+#profile-picture
+{
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+}
+
+#what-mean-imaginator
+{
+    margin-left: 20px;
 }
 
 .center-image
@@ -25,47 +64,32 @@ section
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: red;
+    justify-content: space-around;
 }
 
-#about-me
+#what-do-you-do
 {
-    background-color: blue;
 }
 #get-in-touch
 {
-    background-color: green;
 }
 
-#main-title
-{
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 4em;
-    text-align: center;
-}
+
 
 #personal-introduction
 {
     text-align: center;
 }
 
-#personal-introduction h3
-{
-    margin-top: -40px;
-}
-
 #profile-picture
 {
-    order: 2;
+    /*order: 2;*/
 }
 
 #profile-picture img
 {
-    width: 640px;
-    height: 480px;
+    width: 480px;
+    height: 360px;
 }
 
 #profile-picture figcaption
@@ -79,5 +103,14 @@ section
 #what-mean-imaginator
 {
     flex-basis: 35%;
-    order: 1;
+    /*order: 1;*/
+}
+
+/*Media*/
+/* Small screens */
+@media all and (max-width: 500px) {
+  body {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
