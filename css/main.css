@@ -1,9 +1,26 @@
 body
 {
-    position: relative;
     font-family: 'Helvetica', 'Arial', sans-serif;
     background-color: black;
-    /*background: linear-gradient(to bottom, #003, #111);*/
+    color: white;
+    overflow: hidden;
+}
+
+#content section
+{
+    padding: 10px;
+}
+
+article
+{
+    font-size: 0.1em;
+    margin-bottom: 30px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: normal;
 }
 
 #main-container
@@ -23,6 +40,7 @@ body
 
 #main-title
 {
+    z-index: 1;
     position: absolute;
     top: 0px;
     height: 2em;
@@ -35,16 +53,14 @@ body
 
 #content
 {
-    max-width: 500px;
+    z-index: 1;
+    max-width: 50vw;
+    height: 70vh;
+    position: absolute;
+    left: 40vw;
+    top: 12em;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-}
+    overflow-y: scroll;
 
-#footer
-{
-    max-width: 500px;
-}
-
-article
-{
-    margin-bottom: 20px;
 }
