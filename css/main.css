@@ -1,6 +1,13 @@
 body
 {
     font-family: 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+section
+{
+    display: block;
 }
 
 .center-image
@@ -12,4 +19,65 @@ body
 .center-caption
 {
     text-align: center;
+}
+
+#welcome
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+}
+
+#about-me
+{
+    background-color: blue;
+}
+#get-in-touch
+{
+    background-color: green;
+}
+
+#main-title
+{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4em;
+    text-align: center;
+}
+
+#personal-introduction
+{
+    text-align: center;
+}
+
+#personal-introduction h3
+{
+    margin-top: -40px;
+}
+
+#profile-picture
+{
+    order: 2;
+}
+
+#profile-picture img
+{
+    width: 640px;
+    height: 480px;
+}
+
+#profile-picture figcaption
+{
+    font-family: "Book Antiqua", "Times New Roman", serif;
+    font-size: 0.7em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#what-mean-imaginator
+{
+    flex-basis: 35%;
+    order: 1;
 }
