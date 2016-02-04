@@ -25,13 +25,12 @@ body
 {
     position: absolute;
     top: 0px;
-    height: 180px;
+    height: 2em;
     width: 100%;
-    font-size: 3.5em;
+    font-size: 5vw;
     color: #fff;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 0.8em;
+    padding-top: 5vh;
 }
 
 #content
