@@ -1,66 +1,47 @@
 body
 {
     font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
     background-color: black;
     color: white;
-    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 section
 {
-    padding: 10px;
-}
-
-article
-{
-    font-size: 0.1em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 h2
 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: normal;
+    color: #fA0;
 }
 
-#main-container
+#header
 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: white;
+    text-align: center;
 }
 
-#background-image
+#profile-image
 {
     margin: 0 auto;
-    display: block;
-    max-width: 100%;
 }
 
-#main-title
+#title
 {
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    height: 2em;
-    width: 100%;
-    font-size: 5vw;
-    color: #fff;
-    text-align: center;
-    padding-top: 5vh;
+    /* font-size: 4.5em; */
+    font-size: 7vw;
+    font-weight: normal;
+    color: #f80;
+    margin-bottom: 20px;
+    
 }
 
-#content
+.content
 {
-    z-index: 1;
-    max-width: 50vw;
-    height: 70vh;
-    position: absolute;
-    left: 40vw;
-    top: 12em;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    overflow-y: scroll;
-
+    background-color: rgb(255, 255, 255, 1);
 }
+
